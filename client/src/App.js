@@ -5,7 +5,7 @@ function App() {
   const [state, setState] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:9000/testAPI")
+    fetch("/testAPI")
       .then((res) => res.text())
       .then((res) => setState(res));
   }, []);
